@@ -1,122 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Naillya Ganesan | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+* {
+  box-sizing: border-box;
+}
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">NG</div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f19;
+  color: #ffffff;
+}
 
-<!-- HOME -->
-<section id="home" class="hero">
-  <div class="hero-text">
-    <h1>Hi, I'm <span>Naillya</span> 👋</h1>
-    <h2>Software Engineering Student</h2>
-    <p>
-      Final-Year Software Engineering student at Monash University Malaysia,
-      seeking internship opportunities from <strong>Nov 2025 – Feb 2026</strong>.
-    </p>
-  </div>
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background: #0b0f19;
+}
 
-  <div class="hero-img">
-    <img src="images/profile.jpg" alt="Naillya Ganesan">
-  </div>
-</section>
+.logo {
+  font-weight: bold;
+  color: #4f8cff;
+}
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
 
-  <div class="project-grid">
-    <div class="card">
-      <h3>AI-Powered Health Support System (MARIA)</h3>
-      <p>
-        Web-based AI health support system built with Node.js and React.js
-        using Agile Scrum methodology.
-      </p>
-      <span>Node.js • React • Agile</span>
-    </div>
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 25px;
+}
 
-    <div class="card">
-      <h3>Santorini Board Game (Java)</h3>
-      <p>
-        Digital board game implementation with custom environmental
-        mechanics using OOP principles.
-      </p>
-      <span>Java • OOP • UI/UX</span>
-    </div>
-  </div>
-</section>
+.navbar a:hover {
+  color: #4f8cff;
+}
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a driven and detail-oriented Software Engineering student with a
-    strong foundation in Java, Python, object-oriented programming, and
-    team-based development. I enjoy building practical solutions and
-    continuously improving my technical and leadership skills.
-  </p>
-</section>
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <h2>Experience</h2>
+.hero span {
+  color: #4f8cff;
+}
 
-  <div class="timeline">
+.hero-img img {
+  width: 260px;
+  border-radius: 50%;
+  border: 4px solid #4f8cff;
+}
 
-    <div class="timeline-item">
-      <h3>Computer Vision Intern</h3>
-      <h4>MACV AI PTE LTD (Nov 2023 – Feb 2024)</h4>
-      <p>
-        Trained and fine-tuned YOLOv8 models, worked directly with the CTO
-        on computer vision pipelines, and supported rapid prototyping
-        of AI solutions.
-      </p>
-    </div>
+/* SECTIONS */
+section {
+  padding: 80px;
+}
 
-    <div class="timeline-item">
-      <h3>Leadership Roles</h3>
-      <p>
-        Software Engineering Year Representative, Vice Publicity Officer
-        (Engineers Without Borders), Head of HR (Monash Indian Cultural Society).
-      </p>
-    </div>
+h2 {
+  color: #4f8cff;
+}
 
-  </div>
-</section>
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Get In Touch</h2>
-  <p>Email: <strong>gvnaillya@gmail.com</strong></p>
+.card {
+  background: #131a2a;
+  padding: 20px;
+  border-radius: 12px;
+}
 
-  <a class="btn" href="mailto:gvnaillya@gmail.com">
-    Send Email
-  </a>
+.card span {
+  display: block;
+  margin-top: 10px;
+  color: #aaa;
+}
 
-  <div class="socials">
-    <a href="https://shorturl.at/krAU4" target="_blank">LinkedIn</a>
-  </div>
-</section>
+/* TIMELINE */
+.timeline-item {
+  background: #131a2a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #4f8cff;
+  border-radius: 8px;
+}
 
-<footer>
-  <p>© 2026 Naillya Ganesan</p>
-</footer>
+/* CONTACT */
+.btn {
+  display: inline-block;
+  background: #4f8cff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
 
-<script src="js/main.js"></script>
-</body>
-</html>
+.socials a {
+  color: #4f8cff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
